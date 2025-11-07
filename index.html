@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador Dinámico por Filtros</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <img src="img/logo.png" alt="Logo de la Escuela" class="school-logo">
+        <h1 class="header-title">Buscador de Asignaciones Docentes</h1>
+    </header>
+
+    <div class="container">
+        <p class="intro-text">Utilice los filtros para encontrar la asignación deseada. Todos los campos son filtros activos.</p>
+        
+        <div class="filtro-grid">
+            
+            <div class="filtro-item resultado-final">
+                <label for="filtroDocente">Apellido y Nombre:</label>
+                <select id="filtroDocente" onchange="aplicarFiltros()"></select>
+            </div>
+
+            <div class="filtro-item">
+                <label for="filtroCargo">Cargo:</label>
+                <select id="filtroCargo" onchange="aplicarFiltros()"></select>
+            </div>
+            
+            <div class="filtro-item">
+                <label for="filtroTurno">Turno:</label>
+                <select id="filtroTurno" onchange="aplicarFiltros()"></select>
+            </div>
+            
+            <div class="filtro-item">
+                <label for="filtroCurso">Curso:</label>
+                <select id="filtroCurso" onchange="aplicarFiltros()"></select>
+            </div>
+
+            <div class="filtro-item">
+                <label for="filtroSeccion">Sección:</label>
+                <select id="filtroSeccion" onchange="aplicarFiltros()"></select>
+            </div>
+
+            <div class="filtro-item">
+                <label for="filtroGrupo">Grupo:</label>
+                <select id="filtroGrupo" onchange="aplicarFiltros()"></select>
+            </div>
+
+            <div class="filtro-item">
+                <label for="filtroCiclo">Ciclo/Tecnicatura:</label>
+                <select id="filtroCiclo" onchange="aplicarFiltros()"></select>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>Resultados de la Búsqueda</h2>
+        <div id="resultadoTablaContainer">
+            <p>Datos cargados. Inicie la búsqueda.</p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
