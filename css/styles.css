@@ -102,7 +102,7 @@ select {
     border-radius: 5px;
     box-sizing: border-box; 
     background-color: #fff;
-    font-size: 1em;
+    font-size: 0.5em;
 }
 
 hr {
@@ -146,4 +146,5 @@ hr {
 
 .tabla-resultados tr:hover {
     background-color: #f0f8ff; 
+
 }
