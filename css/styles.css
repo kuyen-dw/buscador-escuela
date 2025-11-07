@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column; /* Cambiado a columna para que el header esté arriba del container */
+    align-items: center; /* Centra el contenido horizontalmente */
+    padding: 20px;
+    margin: 0;
+}
+
+/* --- Nuevos estilos para el encabezado principal --- */
+.main-header {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 1000px; /* Ancho del encabezado igual al contenedor */
+    width: 100%;
+    margin-bottom: 20px; /* Espacio entre el encabezado y el contenedor de filtros */
+    display: flex;
+    align-items: center; /* Centra verticalmente el logo y el título */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    gap: 20px; /* Espacio entre el logo y el título */
+}
+
+.school-logo {
+    max-height: 180px; /* Tamaño máximo del logo */
+    width: auto;
+    object-fit: contain; /* Asegura que el logo se ajuste sin distorsionarse */
+}
+
+.header-title {
+    color: #004d99; /* Azul institucional */
+    margin: 0; /* Elimina márgenes por defecto del h1 */
+    font-size: 2.2em; /* Tamaño del título en el encabezado */
+    text-align: center;
+}
+
+/* --- Ajuste para el p de introducción dentro del contenedor --- */
+.intro-text {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 1.1em;
+}
+
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 1000px; 
+    width: 100%;
+}
+
+/* El resto de tu CSS (h1, filtro-grid, select, hr, h2, tabla-resultados) sigue igual */
+/* Solo asegúrate de eliminar el anterior estilo para 'h1' si lo tenías dentro de '.container' */
+
+/* ... (resto del CSS sigue aquí) ... */
+
+h1 { /* Este h1 de la raíz del body ya no aplica, ahora es .header-title */
+    /* Eliminar o comentar si no hay otro h1 en el body que no sea .header-title */
+}
+
+h2 { /* Estilo para el h2 "Resultados de la Búsqueda" */
+    color: #555;
+    margin-top: 10px;
+    font-size: 1.5em;
+    text-align: center; /* Centrar el subtítulo de resultados */
+}
+
+/* --- Resto de estilos del filtro-grid, select, hr y tabla-resultados se mantienen --- */
+
+.filtro-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px; 
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.filtro-item {
+    padding: 5px 0;
+}
+
+.filtro-item label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #333;
+}
+
+select {
+    width: 100%;
+    padding: 10px 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    background-color: #fff;
+    font-size: 1em;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 25px 0;
+}
+
+
+#resultadoTablaContainer {
+    width: 100%;
+    overflow-x: auto; 
+    margin-top: 20px;
+}
+
+.tabla-resultados {
+    width: 100%;
+    border-collapse: collapse; 
+    min-width: 900px; 
+}
+
+.tabla-resultados th, .tabla-resultados td {
+    border: 1px solid #e0e0e0;
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+.tabla-resultados th {
+    background-color: #007bff; 
+    color: white;
+    font-weight: bold;
+    position: sticky; 
+    top: 0;
+}
+
+.tabla-resultados tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+.tabla-resultados tr:hover {
+    background-color: #f0f8ff; 
+}
